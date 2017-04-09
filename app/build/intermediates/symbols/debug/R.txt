@@ -1,4 +1,5 @@
-int drawable ic_launcher 0x7f020000
+int drawable android_logo 0x7f020000
+int drawable ic_launcher 0x7f020001
 int id btnClose 0x7f060009
 int id btnSearch 0x7f060005
 int id btnSend 0x7f060007

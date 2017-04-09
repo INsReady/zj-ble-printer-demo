@@ -1,13 +1,13 @@
 package com.zj.printdemo;
 
-import com.zj.printdemo.R;
 import android.content.Intent;
 import com.zj.btsdk.BluetoothService;
 import com.zj.btsdk.PrintPic;
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -17,6 +17,11 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import android.util.Log;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
 
 
 public class PrintDemo extends Activity {
@@ -30,6 +35,9 @@ public class PrintDemo extends Activity {
 	BluetoothService mService = null;
 	BluetoothDevice con_dev = null;
 	private static final int REQUEST_CONNECT_DEVICE = 1;  //获取设备消息
+    private static final String ENCODING = "GBK";
+    private static final int D58MMWIDTH = 384;
+    private static final int D80MMWIDTH = 576;
 	
 	
 	
@@ -40,7 +48,7 @@ public class PrintDemo extends Activity {
 		setContentView(R.layout.main);
 		mService = new BluetoothService(this, mHandler);
 		//蓝牙不可用退出程序
-		if( mService.isAvailable() == false ){
+		if(!mService.isAvailable()){
             Toast.makeText(this, "Bluetooth is not available", Toast.LENGTH_LONG).show();
             finish();
 		}		
@@ -50,7 +58,7 @@ public class PrintDemo extends Activity {
     public void onStart() {
     	super.onStart();
     	//蓝牙未打开，打开蓝牙
-		if( mService.isBTopen() == false)
+		if(!mService.isBTopen())
 		{
             Intent enableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
             startActivityForResult(enableIntent, REQUEST_ENABLE_BT);
@@ -89,14 +97,14 @@ public class PrintDemo extends Activity {
 			} else if (v == btnSend) {
                 String msg = edtContext.getText().toString();
                 if( msg.length() > 0 ){
-                    mService.sendMessage(msg+"\n", "GBK");
+                    mService.sendMessage(msg+"\n", ENCODING);
                 }
 			} else if (v == btnClose) {
 				mService.stop();
 			} else if (v == btnSendDraw) {
                 String msg = "";
                 String lang = getString(R.string.strLang);
-				//printImage();
+				printImage();
 				
             	byte[] cmd = new byte[3];
         	    cmd[0] = 0x1b;
@@ -104,7 +112,7 @@ public class PrintDemo extends Activity {
             	if((lang.compareTo("en")) == 0){	
             		cmd[2] |= 0x10;
             		mService.write(cmd);           //倍宽、倍高模式
-            		mService.sendMessage("Congratulations!\n", "GBK"); 
+            		mService.sendMessage("Congratulations!\n", ENCODING);
             		cmd[2] &= 0xEF;
             		mService.write(cmd);           //取消倍高、倍宽模式
             		msg = "  You have sucessfully created communications between your device and our bluetooth printer.\n\n"
@@ -116,7 +124,7 @@ public class PrintDemo extends Activity {
             	}else if((lang.compareTo("ch")) == 0){
             		cmd[2] |= 0x10;
             		mService.write(cmd);           //倍宽、倍高模式
-        		    mService.sendMessage("恭喜您！\n", "GBK"); 
+        		    mService.sendMessage("恭喜您！\n", ENCODING);
             		cmd[2] &= 0xEF;
             		mService.write(cmd);           //取消倍高、倍宽模式
             		msg = "  您已经成功的连接上了我们的蓝牙打印机！\n\n"
@@ -192,13 +200,26 @@ public class PrintDemo extends Activity {
     } 
     
     //打印图形
-    @SuppressLint("SdCardPath")
 	private void printImage() {
     	byte[] sendData = null;
     	PrintPic pg = new PrintPic();
-    	pg.initCanvas(384);     
+    	pg.initCanvas(D58MMWIDTH);
     	pg.initPaint();
-    	pg.drawImage(0, 0, "/mnt/sdcard/icon.jpg");
+        File outputFile = null;
+        String path = "";
+        try {
+            outputFile = File.createTempFile("prefix", ".jpg");
+            OutputStream outStream = new FileOutputStream(outputFile);
+            Bitmap bm = BitmapFactory.decodeResource(this.getResources(), R.drawable.android_logo);
+            int height = D58MMWIDTH * bm.getHeight() / bm.getWidth();
+            bm = Bitmap.createScaledBitmap(bm, D58MMWIDTH, height, false);
+            bm.compress(Bitmap.CompressFormat.JPEG, 100, outStream);
+            path = outputFile.getAbsolutePath();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    	pg.drawImage(0, 0, path);
     	sendData = pg.printDraw();
     	mService.write(sendData);   //打印byte流数据
     }
