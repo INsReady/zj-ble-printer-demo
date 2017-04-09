@@ -1,0 +1,25 @@
+#Sat Apr 08 18:42:14 CST 2017
+renamed.7=classes5.dex
+renamed.6=classes6.dex
+renamed.5=classes8.dex
+renamed.4=classes3.dex
+renamed.3=classes2.dex
+renamed.2=classes4.dex
+renamed.1=classes.dex
+renamed.0=classes7.dex
+base.7=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2dadac519869a471fdf447ae9d1c4b0a3976be11
+base.6=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4c8997c4ca0d4913f92cf3772e4fa62560b7d6aa
+base.5=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_951bb4937821edbe4447a3936369f414da13904c
+base.4=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_473bc9489ab1c930c1eb8274e7488b5c15b09427
+base.3=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2a861855f92ae8cb999021fa6cdcd08435cfe9b1
+base.2=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e29f8ad102665367747a2258d6da1c8393555e1f
+base.1=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/2/btsdk_c36e045e25f659c9a037ecbfc8f1b290661472dd
+base.0=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_cbbacda1b778d5fd3132342794d2c870386766de
+file.7=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2dadac519869a471fdf447ae9d1c4b0a3976be11/classes.dex
+file.6=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4c8997c4ca0d4913f92cf3772e4fa62560b7d6aa/classes.dex
+file.5=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_951bb4937821edbe4447a3936369f414da13904c/classes.dex
+file.4=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_473bc9489ab1c930c1eb8274e7488b5c15b09427/classes.dex
+file.3=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2a861855f92ae8cb999021fa6cdcd08435cfe9b1/classes.dex
+file.2=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e29f8ad102665367747a2258d6da1c8393555e1f/classes.dex
+file.1=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/2/btsdk_c36e045e25f659c9a037ecbfc8f1b290661472dd/classes.dex
+file.0=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_cbbacda1b778d5fd3132342794d2c870386766de/classes.dex

@@ -1,0 +1,27 @@
+#Internal package file, do not edit.
+#Sat Apr 08 18:42:15 CST 2017
+2.base=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_ff2e6f0f3c8f1207ea9a26f5f96f37b98b03f5f7
+5.file=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
+5.set=ANDROID_RESOURCE
+3.base=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/res/resources-debug.ap_
+6.file=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/res/resources-debug.ap_/res/layout/device_name.xml
+2.set=DEX
+4.base=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/res/resources-debug.ap_
+7.file=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/res/resources-debug.ap_/resources.arsc
+7.set=ANDROID_RESOURCE
+count=8
+0.file=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_d3bf6dcf8c1ad0de765162cef17de5fae675561e/classes.dex
+5.base=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/res/resources-debug.ap_
+4.set=ANDROID_RESOURCE
+6.base=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/res/resources-debug.ap_
+1.file=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/res/resources-debug.ap_/res/layout/main.xml
+1.set=ANDROID_RESOURCE
+7.base=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/res/resources-debug.ap_
+2.file=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_ff2e6f0f3c8f1207ea9a26f5f96f37b98b03f5f7/classes.dex
+6.set=ANDROID_RESOURCE
+0.base=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_d3bf6dcf8c1ad0de765162cef17de5fae675561e
+3.file=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/ic_launcher.png
+3.set=ANDROID_RESOURCE
+1.base=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/res/resources-debug.ap_
+4.file=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/res/resources-debug.ap_/res/layout/device_list.xml
+0.set=DEX

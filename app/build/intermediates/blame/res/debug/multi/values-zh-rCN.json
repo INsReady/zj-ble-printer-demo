@@ -1,0 +1,254 @@
+[
+    {
+        "outputFile": "/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 46,
+                    "endOffset": 97
+                },
+                "from": {
+                    "file": "/home/skyred/workspace/BluetoothDEMO/app/src/main/res/values-zh-rCN/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 58,
+                        "endColumn": 46,
+                        "endOffset": 100
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 102,
+                    "endColumn": 39,
+                    "endOffset": 137
+                },
+                "from": {
+                    "file": "/home/skyred/workspace/BluetoothDEMO/app/src/main/res/values-zh-rCN/strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 418,
+                        "endColumn": 39,
+                        "endOffset": 453
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 142,
+                    "endColumn": 45,
+                    "endOffset": 183
+                },
+                "from": {
+                    "file": "/home/skyred/workspace/BluetoothDEMO/app/src/main/res/values-zh-rCN/strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 290,
+                        "endColumn": 45,
+                        "endOffset": 331
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 188,
+                    "endColumn": 38,
+                    "endOffset": 222
+                },
+                "from": {
+                    "file": "/home/skyred/workspace/BluetoothDEMO/app/src/main/res/values-zh-rCN/strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 336,
+                        "endColumn": 38,
+                        "endOffset": 370
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 227,
+                    "endColumn": 42,
+                    "endOffset": 265
+                },
+                "from": {
+                    "file": "/home/skyred/workspace/BluetoothDEMO/app/src/main/res/values-zh-rCN/strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 375,
+                        "endColumn": 42,
+                        "endOffset": 413
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 270,
+                    "endColumn": 42,
+                    "endOffset": 308
+                },
+                "from": {
+                    "file": "/home/skyred/workspace/BluetoothDEMO/app/src/main/res/values-zh-rCN/strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 595,
+                        "endColumn": 42,
+                        "endOffset": 633
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 313,
+                    "endColumn": 44,
+                    "endOffset": 353
+                },
+                "from": {
+                    "file": "/home/skyred/workspace/BluetoothDEMO/app/src/main/res/values-zh-rCN/strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 511,
+                        "endColumn": 44,
+                        "endOffset": 551
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 358,
+                    "endColumn": 44,
+                    "endOffset": 398
+                },
+                "from": {
+                    "file": "/home/skyred/workspace/BluetoothDEMO/app/src/main/res/values-zh-rCN/strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 245,
+                        "endColumn": 44,
+                        "endOffset": 285
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 403,
+                    "endColumn": 48,
+                    "endOffset": 447
+                },
+                "from": {
+                    "file": "/home/skyred/workspace/BluetoothDEMO/app/src/main/res/values-zh-rCN/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 105,
+                        "endColumn": 48,
+                        "endOffset": 149
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 452,
+                    "endColumn": 39,
+                    "endOffset": 487
+                },
+                "from": {
+                    "file": "/home/skyred/workspace/BluetoothDEMO/app/src/main/res/values-zh-rCN/strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 154,
+                        "endColumn": 39,
+                        "endOffset": 189
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 492,
+                    "endColumn": 50,
+                    "endOffset": 538
+                },
+                "from": {
+                    "file": "/home/skyred/workspace/BluetoothDEMO/app/src/main/res/values-zh-rCN/strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 194,
+                        "endColumn": 50,
+                        "endOffset": 240
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 543,
+                    "endColumn": 38,
+                    "endOffset": 577
+                },
+                "from": {
+                    "file": "/home/skyred/workspace/BluetoothDEMO/app/src/main/res/values-zh-rCN/strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 556,
+                        "endColumn": 38,
+                        "endOffset": 590
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 582,
+                    "endColumn": 42,
+                    "endOffset": 620
+                },
+                "from": {
+                    "file": "/home/skyred/workspace/BluetoothDEMO/app/src/main/res/values-zh-rCN/strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 458,
+                        "endColumn": 52,
+                        "endOffset": 506
+                    }
+                }
+            }
+        ]
+    }
+]
