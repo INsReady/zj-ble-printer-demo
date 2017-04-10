@@ -1,7 +1,0 @@
-#Sun Apr 09 14:23:58 CST 2017
-base.0=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_ff2e6f0f3c8f1207ea9a26f5f96f37b98b03f5f7
-renamed.1=classes2.dex
-renamed.0=classes.dex
-file.1=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_d3bf6dcf8c1ad0de765162cef17de5fae675561e/classes.dex
-base.1=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_d3bf6dcf8c1ad0de765162cef17de5fae675561e
-file.0=/home/skyred/workspace/BluetoothDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_ff2e6f0f3c8f1207ea9a26f5f96f37b98b03f5f7/classes.dex

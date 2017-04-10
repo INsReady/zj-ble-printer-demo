@@ -2,7 +2,7 @@ package com.zj.printdemo;
 
 import android.content.Intent;
 import com.zj.btsdk.BluetoothService;
-import com.zj.btsdk.PrintPic;
+import cn.com.zj.command.sdk.Print_pic;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -17,12 +17,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import android.util.Log;
-
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-
 
 public class PrintDemo extends Activity {
 	Button btnSearch;
@@ -202,25 +196,11 @@ public class PrintDemo extends Activity {
     //打印图形
 	private void printImage() {
     	byte[] sendData = null;
-    	PrintPic pg = new PrintPic();
-    	pg.initCanvas(D58MMWIDTH);
-    	pg.initPaint();
-        File outputFile = null;
-        String path = "";
-        try {
-            outputFile = File.createTempFile("prefix", ".jpg");
-            OutputStream outStream = new FileOutputStream(outputFile);
-            Bitmap bm = BitmapFactory.decodeResource(this.getResources(), R.drawable.android_logo);
-            int height = D58MMWIDTH * bm.getHeight() / bm.getWidth();
-            bm = Bitmap.createScaledBitmap(bm, D58MMWIDTH, height, false);
-            bm.compress(Bitmap.CompressFormat.JPEG, 100, outStream);
-            path = outputFile.getAbsolutePath();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-    	pg.drawImage(0, 0, path);
-    	sendData = pg.printDraw();
+    	Print_pic pg = new Print_pic();
+        Bitmap bm = BitmapFactory.decodeResource(this.getResources(), R.drawable.android_logo);
+        int height = D58MMWIDTH * bm.getHeight() / bm.getWidth();
+        bm = Bitmap.createScaledBitmap(bm, D58MMWIDTH, height, false);
+        sendData = PrintPicture.POS_PrintBMP(bm, D58MMWIDTH, 0);
     	mService.write(sendData);   //打印byte流数据
     }
 }
