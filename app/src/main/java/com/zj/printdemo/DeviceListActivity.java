@@ -18,7 +18,7 @@ package com.zj.printdemo;
 
 import java.util.Set;
 
-import com.zj.btsdk.BluetoothService;
+import com.zj.printdemo.BluetoothService;
 
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
