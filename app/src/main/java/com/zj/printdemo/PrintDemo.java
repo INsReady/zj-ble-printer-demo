@@ -1,8 +1,8 @@
 package com.zj.printdemo;
 
 import android.content.Intent;
-import com.zj.btsdk.BluetoothService;
-import cn.com.zj.command.sdk.Print_pic;
+//import com.zj.btsdk.BluetoothService;
+import com.zj.printdemo.BluetoothService;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -109,9 +109,7 @@ public class PrintDemo extends Activity {
             		mService.sendMessage("Congratulations!\n", ENCODING);
             		cmd[2] &= 0xEF;
             		mService.write(cmd);           //取消倍高、倍宽模式
-            		msg = "  You have sucessfully created communications between your device and our bluetooth printer.\n\n"
-                          +"  the company is a high-tech enterprise which specializes" +
-                          " in R&D,manufacturing,marketing of thermal printers and barcode scanners.\n\n";
+            		msg = "  You have successfully created communications between your device and our bluetooth printer.\n\n";
                          
 
             		mService.sendMessage(msg,"GBK");
@@ -196,7 +194,6 @@ public class PrintDemo extends Activity {
     //打印图形
 	private void printImage() {
     	byte[] sendData = null;
-    	Print_pic pg = new Print_pic();
         Bitmap bm = BitmapFactory.decodeResource(this.getResources(), R.drawable.android_logo);
         int height = D58MMWIDTH * bm.getHeight() / bm.getWidth();
         bm = Bitmap.createScaledBitmap(bm, D58MMWIDTH, height, false);
